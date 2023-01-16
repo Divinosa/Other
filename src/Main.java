@@ -1,3 +1,5 @@
+import org.w3c.dom.ls.LSOutput;
+
 import java.sql.SQLOutput;
 import java.util.Scanner;
 
@@ -58,9 +60,10 @@ public class Main {
             }
         }
         boolean doBonus = sum >= MIN_COST_FOR_BONUS;
+        System.out.println("Сумма покупки более " + MIN_COST_FOR_BONUS + " руб.");
         for (int i = 0; i < products.length; i++) {
             if (counts[i] != 0) {
-                System.out.println("\t" + products[i] + " " + (doBonus ? counts[i] + 1 : counts[i]) + " шт. за " + (prices[i] * counts[i]) + " руб.");
+                System.out.println("\t" + products[i] + " " + " + 1 ");
             }
         }
 
